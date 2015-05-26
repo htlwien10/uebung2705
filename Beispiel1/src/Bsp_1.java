@@ -12,9 +12,20 @@ public class Bsp_1 {
 		seite3=IO.readDouble("3. Seitenlänge: ");
 		
 		IO.print("\nDie Fläche beträgt: ");
+		IO.println(flaeche(seite1,seite2,seite3),5,2);
 		
 		verabschiedung();
 
+	}
+	
+	
+	static double flaeche(double a,double b,double c) {
+		
+		double f, s;
+		s=(a+b+c)/2;
+		f=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+		return f;
+		
 	}
 	
 	
