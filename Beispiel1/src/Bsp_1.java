@@ -11,6 +11,9 @@ public class Bsp_1 {
 		seite2=IO.readDouble("2. Seitenlänge: ");
 		seite3=IO.readDouble("3. Seitenlänge: ");
 		
+		//Achtung keine Überprüfung auf fehlerhafte Eingaben
+		
+		
 		IO.print("\nDie Fläche beträgt: ");
 		IO.println(flaeche(seite1,seite2,seite3),5,2);
 		
